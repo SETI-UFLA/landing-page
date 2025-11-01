@@ -46,7 +46,7 @@ const Footer = () => {
               />
               <div className="flex gap-3">
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/company/compjunior/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:text-seti-orange transition-colors"
@@ -56,7 +56,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/compjunior/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:text-seti-orange transition-colors"
@@ -80,7 +80,7 @@ const Footer = () => {
               />
               <div className="flex gap-3">
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/company/emakersjr" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:text-seti-orange transition-colors"
@@ -90,7 +90,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/emakersjr/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:text-seti-orange transition-colors"
@@ -114,7 +114,7 @@ const Footer = () => {
               />
               <div className="flex gap-3">
                 <a 
-                  href="https://linkedin.com" 
+                  href="linkedin.com/company/cati-ufla/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:text-seti-orange transition-colors"
@@ -124,7 +124,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/cati.dcc/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white hover:text-seti-orange transition-colors"

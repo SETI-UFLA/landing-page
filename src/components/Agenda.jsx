@@ -113,7 +113,7 @@ const Agenda = () => {
             <button
               key={day}
               onClick={() => setSelectedDay(day)}
-              className={`px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-full font-bold text-xs sm:text-sm md:text-base transition-all duration-300 ${
+              className={`px-6 md:px-8 py-2 md:py-3 rounded-full font-bold text-sm md:text-base transition-all duration-300 ${
                 selectedDay === day
                   ? 'bg-seti-orange text-black'
                   : 'bg-transparent border-2 border-white text-white hover:border-seti-orange hover:text-seti-orange'

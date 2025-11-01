@@ -14,16 +14,19 @@ const About = () => {
       title: 'QUEM É A COMPJUNIOR?',
       logo: compjuniorLogo,
       description: 'Somos uma empresa júnior que já atua no desenvolvimento de projetos de tecnologia há mais de 25 anos. Nosso início foi no dia 11 de Agosto de 1999 e, desde então, trabalhamos em diversos projetos de consultoria em web design, desenvolvimento de sistemas online e mobile, capacitações em ferramentas de tecnologia e até análise de dados.',
+      link: 'https://www.compjunior.com.br',
     },
     {
       title: 'QUEM É A EMAKERS JR.?',
       logo: emakersLogo,
       description: 'Somos a Emakers Jr, uma empresa júnior de tecnologia da UFLA, fundada em 2018, com o propósito de formar jovens líderes e profissionais preparados para os desafios do mercado de trabalho. Nosso diferencial é uma abordagem inovadora e ousada, sempre buscando projetos que nos desafiem e nos tirem da zona de conforto, promovendo soluções tecnológicas de impacto.',
+      link: 'https://emakersjr.com.br',
     },
     {
       title: 'QUEM É A CATI?',
       logo: catiLogo,
       description: 'O CATI - Centro Academico de Tecnologia e Informação é uma iniciativa que oferece suporte ao corpo discente da UFLA, promovendo a integração entre alunos e empresas do setor de tecnologia. Nosso objetivo é proporcionar experiências práticas e oportunidades de desenvolvimento profissional para os estudantes, e melhorar o convivío contidiano durante a formação acadêmica.',
+      link: 'https://www.instagram.com/cati.dcc/',
     },
   ];
 
@@ -71,9 +74,14 @@ const About = () => {
                   </p>
                   
                   <div className="mt-8 text-center flex-shrink-0">
-                    <button className="bg-seti-orange hover:bg-orange-600 px-8 py-3 rounded-full font-bold transition-all duration-300">
+                    <a 
+                      href={company.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-seti-orange hover:bg-orange-600 px-8 py-3 rounded-full font-bold transition-all duration-300"
+                    >
                       Saiba Mais
-                    </button>
+                    </a>
                   </div>
                 </div>
               </SwiperSlide>
@@ -86,7 +94,7 @@ const About = () => {
           {companies.map((company, index) => (
             <div 
               key={index}
-              className="relative bg-gradient-to-br from-gray-900 to-black border-2 border-gray-700 rounded-2xl p-8 hover:border-seti-orange transition-all duration-300 h-[520px] flex flex-col"
+              className="relative bg-gradient-to-br from-gray-900 to-black border-2 border-gray-700 rounded-2xl p-8 hover:border-seti-orange transition-all duration-300 flex flex-col"
             >
               {/* Logo */}
               <div className="flex justify-center mb-6 mt-4 flex-shrink-0">
@@ -102,14 +110,19 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-6 text-center flex-shrink-0">
                 {company.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed text-justify flex-1 overflow-auto">
+              <p className="text-gray-300 leading-relaxed text-justify flex-1 mb-6">
                 {company.description}
               </p>
               
-              <div className="mt-8 text-center flex-shrink-0">
-                <button className="bg-seti-orange hover:bg-orange-600 px-8 py-3 rounded-full font-bold transition-all duration-300">
+              <div className="text-center flex-shrink-0">
+                <a 
+                  href={company.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-seti-orange hover:bg-orange-600 px-8 py-3 rounded-full font-bold transition-all duration-300"
+                >
                   Saiba Mais
-                </button>
+                </a>
               </div>
             </div>
           ))}

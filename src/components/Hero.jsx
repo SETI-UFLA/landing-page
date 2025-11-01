@@ -2,6 +2,13 @@ import React from 'react';
 import logo from '../assets/images/Logo.png';
 
 const Hero = () => {
+  const scrollToAgenda = () => {
+    const agendaSection = document.getElementById('atividades');
+    if (agendaSection) {
+      agendaSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background gradient */}
@@ -44,7 +51,10 @@ const Hero = () => {
         </div>
 
         <div>
-          <button className="bg-seti-orange hover:bg-orange-600 px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105">
+          <button 
+            onClick={scrollToAgenda}
+            className="bg-seti-orange hover:bg-orange-600 px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 cursor-pointer"
+          >
             Inscreva-se Agora
           </button>
         </div>

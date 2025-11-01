@@ -3,11 +3,12 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Partners from './components/Partners';
 import Speakers from './components/Speakers';
-import Interest from './components/Interest';
+// import Interest from './components/Interest';
 import Career from './components/Career';
 import Agenda from './components/Agenda';
 import About from './components/About';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
+import Sponsors from './components/Sponsors';
 import Support from './components/Support';
 import Footer from './components/Footer';
 import fundoImage from './assets/images/fundo.png';
@@ -33,11 +34,12 @@ function App() {
         <Hero />
         <Partners />
         <Speakers />
-        <Interest />
+        {/* <Interest /> */}
         <Career />
         <Agenda />
         <About />
-        <Contact />
+        {/* <Contact /> */}
+        <Sponsors />
         <Support />
         <Footer />
       </div>
