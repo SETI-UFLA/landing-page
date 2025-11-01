@@ -6,6 +6,8 @@ import Speakers from './components/Speakers';
 import Career from './components/Career';
 import Agenda from './components/Agenda';
 import About from './components/About';
+import Sponsors from './components/Sponsors';
+import Support from './components/Support';
 import Footer from './components/Footer';
 import fundoImage from './assets/images/fundo.png';
 
@@ -33,6 +35,8 @@ function App() {
         <Career />
         <Agenda />
         <About />
+        <Sponsors />
+        <Support />
         <Footer />
       </div>
     </div>
