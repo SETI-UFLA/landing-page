@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -10,6 +10,9 @@ import bitkaLogo from '../assets/images/BITKA.png';
 import cloudwalkLogo from '../assets/images/CLOUDWALK.png';
 
 const Partners = () => {
+  const [activePartner, setActivePartner] = useState(null);
+  const [activeSlide, setActiveSlide] = useState(0);
+
   const partners = [
     {
       name: 'SYDLE',
@@ -33,6 +36,13 @@ const Partners = () => {
     },
   ];
 
+  // Auto-rotate partners on desktop - disabled by default
+  // Users can hover to activate
+  useEffect(() => {
+    // Removed auto-rotate to start with all cards inactive
+    // Only activates on user hover
+  }, [activePartner, partners.length]);
+
   return (
     <section className="relative py-12 md:py-20">
       {/* Background gradient */}
@@ -42,7 +52,7 @@ const Partners = () => {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-16 px-4">
-          CONHEÇA NOSSOS <span className="text-seti-orange">PARCEIROS/APOIADORES</span>
+          CONHEÇA NOSSOS <span className="text-seti-orange"> <br/>PARCEIROS e APOIADORES</span>
         </h2>
 
         {/* Mobile Carousel */}
@@ -52,47 +62,87 @@ const Partners = () => {
             spaceBetween={20}
             slidesPerView={1}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
             className="pb-12"
           >
             {partners.map((partner, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white text-black p-6 rounded-lg mx-4 h-[420px] flex flex-col">
-                  <div className="h-40 flex items-center justify-center mb-4 flex-shrink-0">
-                    <img 
-                      src={partner.logo} 
-                      alt={partner.name}
-                      className="h-full w-full object-contain"
-                    />
+                {({ isActive }) => (
+                  <div className={`mx-4 rounded-lg p-6 transition-all duration-500 flex flex-col ${
+                    isActive
+                      ? 'bg-white shadow-xl shadow-seti-orange/30'
+                      : 'bg-gray-900/50 backdrop-blur-sm border border-gray-700'
+                  }`}>
+                    {/* Logo */}
+                    <div className="h-40 flex items-center justify-center mb-4">
+                      <img
+                        src={partner.logo}
+                        alt={partner.name}
+                        className={`h-full w-full object-contain transition-all duration-500 ${
+                          isActive ? 'grayscale-0 brightness-100' : 'grayscale brightness-0 invert opacity-40'
+                        }`}
+                      />
+                    </div>
+
+                    {/* Description - Only visible on active slide */}
+                    <div className={`transition-all duration-500 overflow-hidden ${
+                      isActive ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                      <p className="text-xs leading-relaxed text-black text-justify" style={{ fontFamily: "'Comic Sans MS', 'Comic Sans', cursive", fontWeight: 500 }}>
+                        {partner.description}
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-xs leading-relaxed text-justify font-medium overflow-auto" style={{ fontFamily: "'Comic Sans MS', 'Comic Sans', cursive", fontWeight: 500 }}>
-                    {partner.description}
-                  </p>
-                </div>
+                )}
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
 
         {/* Desktop Grid */}
-        <div className="hidden md:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
-          {partners.map((partner, index) => (
-            <div 
-              key={index}
-              className="bg-white text-black p-6 md:p-8 rounded-lg hover:scale-105 transition-transform duration-300 h-[420px] md:h-[440px] flex flex-col"
-            >
-              <div className="h-32 md:h-40 flex items-center justify-center mb-4 flex-shrink-0">
-                <img 
-                  src={partner.logo} 
-                  alt={partner.name}
-                  className="h-full w-full object-contain"
-                />
+        <div className="hidden md:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto items-start">
+          {partners.map((partner, index) => {
+            const isActive = activePartner === index;
+            return (
+              <div
+                key={index}
+                className="relative"
+                style={{ minHeight: '16rem' }}
+              >
+                <div
+                  onMouseEnter={() => setActivePartner(index)}
+                  onMouseLeave={() => setActivePartner(null)}
+                  className={`cursor-pointer rounded-lg transition-all duration-500 flex flex-col ${
+                    isActive
+                      ? 'bg-white shadow-2xl shadow-seti-orange/30 p-6 md:p-8 absolute top-0 left-0 right-0 z-20'
+                      : 'bg-gray-900/50 backdrop-blur-sm border border-gray-700 p-4 md:p-8 hover:border-gray-600 h-56 md:h-64'
+                  }`}
+                >
+                  <div className="flex items-center justify-center relative" style={{ height: isActive ? '8rem' : '10rem', transition: 'height 500ms ease-in-out' }}>
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="max-h-full max-w-full transition-all duration-500"
+                      style={{
+                        filter: isActive ? 'grayscale(0) brightness(1)' : 'grayscale(1) brightness(0) invert(1)',
+                        transition: 'filter 500ms ease-in-out'
+                      }}
+                    />
+                  </div>
+
+                  {/* Description - Only visible when active */}
+                  <div className={`transition-all duration-500 overflow-hidden ${
+                    isActive ? 'opacity-100' : 'hidden opacity-0'
+                  }`}>
+                    <p className="text-xs leading-relaxed text-black text-justify" style={{ fontFamily: "'Comic Sans MS', 'Comic Sans', cursive", fontWeight: 500 }}>
+                      {partner.description}
+                    </p>
+                  </div>
+                </div>
               </div>
-              <p className="text-xs md:text-sm leading-relaxed text-justify font-medium overflow-auto" style={{ fontFamily: "'Comic Sans MS', 'Comic Sans', cursive", fontWeight: 500 }}>
-                {partner.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
