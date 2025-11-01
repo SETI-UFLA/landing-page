@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Agenda = () => {
-  const [selectedDay, setSelectedDay] = useState('Dia 1');
+  const [selectedDay, setSelectedDay] = useState('03/11');
 
   const scheduleByDay = {
     '03/11': [
