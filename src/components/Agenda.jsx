@@ -116,7 +116,7 @@ const Agenda = () => {
     ]
   };
 
-  const days = ['Dia 1', 'Dia 2', 'Dia 3', 'Dia 4', 'Dia 5'];
+  const days = ['03/11', '04/11', '05/11', '06/11', '07/11'];
 
   return (
     <section id="atividades" className="relative py-12 md:py-20">
