@@ -4,7 +4,7 @@ const Agenda = () => {
   const [selectedDay, setSelectedDay] = useState('Dia 1');
 
   const scheduleByDay = {
-    'Dia 1': [
+    '03/11': [
       {
         time: '13:00 - 14:00',
         title: 'ABERTURA E CREDENCIAMENTO',
@@ -36,7 +36,7 @@ const Agenda = () => {
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScG1CcswO5jR3ZRsMELfpmtoNGHJUSy-hmaUKrqy8iml1fbSQ/viewform?usp=sharing&ouid=115159331211906572522'
       }
     ],
-    'Dia 2': [
+    '04/11': [
       {
         time: '13:00 - 14:00',
         title: 'Server Driven User Interface (SDUI) no Futuro do Desenvolvimento Mobile',
@@ -50,7 +50,7 @@ const Agenda = () => {
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdMNXd2Up-zlV1uaYa148Kb15QdJpgv_yknNw1DfZUNu7OHyg/viewform?usp=sharing&ouid=115159331211906572522'
       }
     ],
-    'Dia 3': [
+    '05/11': [
       {
         time: '15:00 - 16:00',
         title: 'AI-Driven Development: Evitando a Guerra Butleriana ',
@@ -77,7 +77,7 @@ const Agenda = () => {
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeQnvsXtHGBruT2OJUNQYkYzCJGPoUR0OkYFW-BRj81jlpdhg/viewform?usp=sharing&ouid=115159331211906572522'
       },
     ],
-    'Dia 4': [
+    '06/11': [
       {
         time: '16:00 - 17:00',
         title: 'Arquiteturas de agentes de IA',
@@ -93,7 +93,7 @@ const Agenda = () => {
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeX3XrjSLXqEBWTKzHTmVYjT9QwynzYCFwxfLUhq6TzOlND0Q/viewform?usp=dialog'
       }
     ],
-    'Dia 5': [
+    '07/11': [
       {
         time: '13:00 - 14:00',
         title: 'Inteligência Artificial e o Futuro do Trabalho',
