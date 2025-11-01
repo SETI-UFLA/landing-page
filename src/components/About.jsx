@@ -26,7 +26,7 @@ const About = () => {
       title: 'QUEM É A CATI?',
       logo: catiLogo,
       description: 'O CATI - Centro Academico de Tecnologia e Informação é uma iniciativa que oferece suporte ao corpo discente da UFLA, promovendo a integração entre alunos e empresas do setor de tecnologia. Nosso objetivo é proporcionar experiências práticas e oportunidades de desenvolvimento profissional para os estudantes, e melhorar o convivío contidiano durante a formação acadêmica.',
-      link: 'https://www.instagram.com/cati.dcc/',
+      link: 'https://www.instagram.com/cati.dcc',
     },
   ];
 
@@ -54,27 +54,27 @@ const About = () => {
           >
             {companies.map((company, index) => (
               <SwiperSlide key={index}>
-                <div className="relative bg-gradient-to-br from-gray-900 to-black border-2 border-gray-700 rounded-2xl p-8 hover:border-seti-orange transition-all duration-300 mx-4 h-[520px] flex flex-col">
+                <div className="relative bg-gradient-to-br from-gray-900 to-black border-2 border-gray-700 rounded-2xl p-8 hover:border-seti-orange transition-all duration-300 mx-4 min-h-[520px] flex flex-col">
                   {/* Logo */}
                   <div className="flex justify-center mb-6 mt-4 flex-shrink-0">
                     <div className="w-32 h-24 flex items-center justify-center">
-                      <img 
-                        src={company.logo} 
+                      <img
+                        src={company.logo}
                         alt={company.title}
                         className="max-w-full max-h-full object-contain filter brightness-0 invert"
                       />
                     </div>
                   </div>
-                  
+
                   <h3 className="text-2xl font-bold mb-6 text-center flex-shrink-0">
                     {company.title}
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-justify flex-1 overflow-auto">
+                  <p className="text-gray-300 leading-relaxed text-justify mb-6">
                     {company.description}
                   </p>
-                  
-                  <div className="mt-8 text-center flex-shrink-0">
-                    <a 
+
+                  <div className="mt-auto text-center flex-shrink-0">
+                    <a
                       href={company.link}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -92,30 +92,30 @@ const About = () => {
         {/* Desktop Grid */}
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
           {companies.map((company, index) => (
-            <div 
+            <div
               key={index}
-              className="relative bg-gradient-to-br from-gray-900 to-black border-2 border-gray-700 rounded-2xl p-8 hover:border-seti-orange transition-all duration-300 flex flex-col"
+              className="relative bg-gradient-to-br from-gray-900 to-black border-2 border-gray-700 rounded-2xl p-8 hover:border-seti-orange transition-all duration-300 min-h-[520px] flex flex-col"
             >
               {/* Logo */}
               <div className="flex justify-center mb-6 mt-4 flex-shrink-0">
                 <div className="w-32 h-24 flex items-center justify-center">
-                  <img 
-                    src={company.logo} 
+                  <img
+                    src={company.logo}
                     alt={company.title}
                     className="max-w-full max-h-full object-contain filter brightness-0 invert"
                   />
                 </div>
               </div>
-              
+
               <h3 className="text-2xl font-bold mb-6 text-center flex-shrink-0">
                 {company.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed text-justify flex-1 mb-6">
+              <p className="text-gray-300 leading-relaxed text-justify mb-6">
                 {company.description}
               </p>
-              
-              <div className="text-center flex-shrink-0">
-                <a 
+
+              <div className="mt-auto text-center flex-shrink-0">
+                <a
                   href={company.link}
                   target="_blank"
                   rel="noopener noreferrer"
