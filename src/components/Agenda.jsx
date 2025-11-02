@@ -1,4 +1,17 @@
 import React, { useState } from 'react';
+import arthurVianaImg from '../assets/images/palestrantes/arthur-viana.png';
+import marlonImg from '../assets/images/palestrantes/marlon.png';
+import nelsonImg from '../assets/images/palestrantes/nelson.png';
+import rafaelAlmeidaImg from '../assets/images/palestrantes/rafael-almeida.png';
+import tsunodaImg from '../assets/images/palestrantes/tsunoda.jpg';
+import alvaroImg from '../assets/images/palestrantes/alvaro.jpg';
+import luizImg from '../assets/images/palestrantes/luiz.jpg';
+import vitorImg from '../assets/images/palestrantes/vitão.jpeg';
+import pamelaImg from '../assets/images/palestrantes/pamela.jpeg';
+import pedroImg from '../assets/images/palestrantes/pedro-nexos.jpeg';
+import ellenImg from '../assets/images/palestrantes/Ellen Luise Sanchez Costa.jpg';
+import jeanImg from '../assets/images/palestrantes/Jean Santos Diniz.jpeg';
+import danielImg from '../assets/images/palestrantes/daniel.png'
 
 const Agenda = () => {
   const [selectedDay, setSelectedDay] = useState('03/11');
@@ -15,6 +28,7 @@ const Agenda = () => {
         time: '14:00 - 15:00',
         title: 'CiberSegurança Em Aplicações Web Com Um Plus de Criptografia',
         speaker: 'Marlon Henrique Sanches',
+        speakerImage: marlonImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeFJhXzu12gQ4lD-5UXhA1Oc7VpaDD8qdxhnM5t8dFUt1W6Eg/viewform?usp=dialog'
       },
       {
@@ -26,13 +40,15 @@ const Agenda = () => {
       {
         time: '17:00 - 18:00',
         title: 'De dados a decisão: a jornada do Cientista de Dados',
-        speaker: 'Pâmela Marinho',
+        speaker: 'Pâmela Marinho - Data Science Manager no Nubank',
+        speakerImage: pamelaImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdNyopnyXxS_GLGRodultFmf1kWWIbVy2Va4kL9TxJdBqb9mQ/viewform?usp=dialog'
       },
       {
         time: '19:00 - 20:00',
         title: 'DO ZERO AO LLM: FUNDAMENTOS DE IA NA CONSTRUÇÃO DE ASSISTENTES INTELIGENTES',
-        speaker: 'Luiz',
+        speaker: 'Luiz - Tech Lead na Buildaz',
+        speakerImage: luizImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScG1CcswO5jR3ZRsMELfpmtoNGHJUSy-hmaUKrqy8iml1fbSQ/viewform?usp=sharing&ouid=115159331211906572522'
       }
     ],
@@ -40,40 +56,51 @@ const Agenda = () => {
       {
         time: '13:00 - 14:00',
         title: 'Server Driven User Interface (SDUI) no Futuro do Desenvolvimento Mobile',
-        speaker: 'NEXOS',
+        speaker: 'Pedro Moura - Senior Android Engineer na NEXOS',
+        speakerImage: pedroImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdPZk8Bqkdes7U2KsCJNqBnLzQRYK7IKe8p4ueFA7DMutKI8w/viewform?usp=dialog'
       },
       {
         time: '20:00 - 21:00',
         title: 'A plataforma Devscout',
-        speaker: 'Gabriel Tsonuda',
+        speaker: 'Gabriel Tsonuda - Desenvolvedor Full Stack',
+        speakerImage: tsunodaImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdMNXd2Up-zlV1uaYa148Kb15QdJpgv_yknNw1DfZUNu7OHyg/viewform?usp=sharing&ouid=115159331211906572522'
       }
     ],
     '05/11': [
       {
+        time: '14:00 - 15:00',
+        title: 'Como desenvolver sua própria inteligência artificial',
+        speaker: 'Daniel Oliveira Ferreira - Engenheiro Aeronáutico, Mestre pelo Instituto Tecnológico de Aeronáutica (ITA) e CEO da Dafer Technology',
+        speakerImage: danielImg,
+        formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc0GfI87YEcgcqskrYmi91xcymDjnKGhIn0l9WjPPXz3h9uYQ/viewform?usp=publish-editor'
+      },
+      {
         time: '15:00 - 16:00',
         title: 'AI-Driven Development: Evitando a Guerra Butleriana ',
         speaker: 'Nelson Campos - Cloudwalk',
-        description: 'Construindo apps com AI na CloudWalk, fazendo silício desenvolver consciência com o JIM, e construindo a rede intergalactica de pagamentos.',
+        speakerImage: nelsonImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfZZ5CPUQma7NehoCxsxrcjt7vLZPvJh008myxeE7DBdjGEAA/viewform?usp=dialog'
       },
       {
         time: '16:00 - 17:00',
         title: 'Computação Quântica',
-        speaker: 'Álvaro Martins',
+        speaker: 'Álvaro Martins - Cientista de Dados Prescritivo na Bitka Analytics',
+        speakerImage: alvaroImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSe-fNOZr6y-pt1z-1O0YdyYKKsWQNSn55l0m0aZpJuAUiakvA/viewform?usp=dialog'
       },
       {
         time: '17:00 - 18:00',
         title: 'Gestão de Projetos: Pessoas, Processos e Propósito',
         speaker: 'Vitor Tenório - Fundador da Zeeway',
+        speakerImage: vitorImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfZyDmOp2fcGFfsmR9K026rCNhVtR9isc2c3ojuH5PT2L6PSQ/viewform?usp=sharing&ouid=115159331211906572522'
       },
       {
         time: '18:00 - 19:00',
         title: 'Seo na prática: Como buscadores pensam, o que importa e como medir resultados.',
-        speaker: 'Guilherme Grego Santos - Levty',
+        speaker: 'Guilherme Grego Santos - Tech Lead na Levty',
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeQnvsXtHGBruT2OJUNQYkYzCJGPoUR0OkYFW-BRj81jlpdhg/viewform?usp=sharing&ouid=115159331211906572522'
       },
     ],
@@ -82,14 +109,14 @@ const Agenda = () => {
         time: '16:00 - 17:00',
         title: 'Arquiteturas de agentes de IA',
         speaker: 'Arthur Viana - Cloudwalk',
-        description: 'Arthur é prompt engineer na Cloudwalk, começou na empresa como estagiário e hoje faz aplicações de IA voltadas para melhorar a experiência do cliente.',
+        speakerImage: arthurVianaImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSerg5TyjoQflROPMJhV-7lzasPAyiPPhwMl9ImwbyNVp9jwcg/viewform?usp=sharing&ouid=115159331211906572522'
       },
       {
         time: '17:00 - 18:00',
         title: 'YVA: A agente inteligente que está transformando a gestão pública no Brasil',
-        speaker: 'Jean Santos Diniz e  Ellen Luise Sanchez Costa - YouX',
-        description: 'Arthur é prompt engineer na Cloudwalk, começou na empresa como estagiário e hoje faz aplicações de IA voltadas para melhorar a experiência do cliente.',
+        speaker: 'Ellen Luise Sanchez Costa - Coordenadora de Marketing e Inovação na YouX | Jean Santos Diniz - Analista de Sistemas na YouX',
+        speakerImage: [jeanImg, ellenImg],
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeX3XrjSLXqEBWTKzHTmVYjT9QwynzYCFwxfLUhq6TzOlND0Q/viewform?usp=dialog'
       }
     ],
@@ -104,7 +131,7 @@ const Agenda = () => {
         time: '14:00 - 15:00',
         title: 'Treinando RNA utilizando estratégias evolutivas',
         speaker: 'Rafael Almeida - Cloudwalk',
-        description: 'Apaixonado por tecnologia que cabe na palma da mão, é desenvolvedor mobile há mais de 10 anos e hoje é especialista na Cloudwalk criando soluções e apoiando todo o time de mobile da empresa.',
+        speakerImage: rafaelAlmeidaImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdvMacyy-8r_ZkWxt6lBzSy5LEQ7-RKTo_YhZCc3e1j0eUn1Q/viewform?usp=dialog'
       },
       {
@@ -149,46 +176,82 @@ const Agenda = () => {
 
         {/* Schedule Items */}
         <div className="max-w-5xl mx-auto space-y-4 md:space-y-6">
-          {scheduleByDay[selectedDay].map((item, index) => (
-            <div
-              key={index}
-              className="bg-gradient-to-r from-black/80 to-black/60 border-l-4 border-seti-orange rounded-lg p-4 md:p-6 hover:from-black/90 hover:to-black/70 transition-all duration-300"
-            >
-              <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                {/* Time Column */}
-                <div className="md:w-40 shrink-0">
-                  <div className="text-seti-orange font-bold text-lg md:text-xl">
-                    {item.time}
-                  </div>
-                </div>
+          {scheduleByDay[selectedDay].map((item, index) => {
+            const speakerImage = item.speakerImage;
+            const hasMultipleSpeakers = Array.isArray(speakerImage);
 
-                {/* Content */}
-                <div className="flex-1">
-                  <h3 className="text-white font-bold text-base md:text-lg mb-2">
-                    {item.title}
-                  </h3>
-                  {item.speaker && (
-                    <p className="text-seti-orange text-sm md:text-base mb-3">
-                      com <span className="font-semibold">{item.speaker}</span>
-                    </p>
+            return (
+              <div
+                key={index}
+                className="bg-gradient-to-r from-black/80 to-black/60 border-l-4 border-seti-orange rounded-lg overflow-hidden hover:from-black/90 hover:to-black/70 transition-all duration-300"
+              >
+                <div className="flex flex-col md:flex-row">
+                  <div className="flex-1 p-4 md:p-6">
+                    <div className="flex flex-col md:flex-row gap-4 md:gap-6">
+                      {/* Time Column */}
+                      <div className="md:w-40 shrink-0">
+                        <div className="text-seti-orange font-bold text-lg md:text-xl">
+                          {item.time}
+                        </div>
+                      </div>
+
+                      {/* Content */}
+                      <div className="flex-1">
+                        <h3 className="text-white font-bold text-base md:text-lg mb-2">
+                          {item.title}
+                        </h3>
+                        {item.speaker && (
+                          <p className="text-seti-orange text-sm md:text-base mb-3">
+                            com <span className="font-semibold">{item.speaker}</span>
+                          </p>
+                        )}
+                        {item.description && (
+                          <p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-4">
+                            {item.description}
+                          </p>
+                        )}
+                        <a
+                          href={item.formUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block bg-seti-orange hover:bg-orange-600 text-black font-bold px-4 md:px-6 py-2 md:py-2.5 rounded-full text-xs md:text-sm transition-all duration-300 transform hover:scale-105"
+                        >
+                          Inscrever-se
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Speaker Image(s) - Right Side */}
+                  {speakerImage && (
+                    <div className="w-full md:w-32 lg:w-40 shrink-0 border-t md:border-t-0 md:border-l-2 border-seti-orange/30">
+                      {hasMultipleSpeakers ? (
+                        <div className="flex md:flex-col gap-2 h-full p-4 md:p-0">
+                          {speakerImage.map((img, idx) => (
+                            <div key={idx} className="flex-1 md:h-1/2 overflow-hidden">
+                              <img
+                                src={img}
+                                alt={`Palestrante ${idx + 1}`}
+                                className="w-full h-full object-cover object-top"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="w-full h-full min-h-[150px] md:min-h-full">
+                          <img
+                            src={speakerImage}
+                            alt={item.speaker}
+                            className="w-full h-full object-cover object-top"
+                          />
+                        </div>
+                      )}
+                    </div>
                   )}
-                  {item.description && (
-                    <p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-4">
-                      {item.description}
-                    </p>
-                  )}
-                  <a
-                    href={item.formUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-seti-orange hover:bg-orange-600 text-black font-bold px-4 md:px-6 py-2 md:py-2.5 rounded-full text-xs md:text-sm transition-all duration-300 transform hover:scale-105"
-                  >
-                    Inscrever-se
-                  </a>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

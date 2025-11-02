@@ -20,7 +20,7 @@ const About = () => {
       title: 'QUEM É A EMAKERS JR.?',
       logo: emakersLogo,
       description: 'Somos a Emakers Jr, uma empresa júnior de tecnologia da UFLA, fundada em 2018, com o propósito de formar jovens líderes e profissionais preparados para os desafios do mercado de trabalho. Nosso diferencial é uma abordagem inovadora e ousada, sempre buscando projetos que nos desafiem e nos tirem da zona de conforto, promovendo soluções tecnológicas de impacto.',
-      link: 'https://emakersjr.com.br',
+      link: 'https://emakersjr.com.br/',
     },
     {
       title: 'QUEM É A CATI?',
