@@ -44,9 +44,11 @@ const Hero = () => {
         </div>
 
         <div className="animate-slide-in-up">
-          <button className="bg-seti-orange hover:bg-orange-600 px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105">
-            Inscreva-se Agora
-          </button>
+          <a href="#atividades">
+            <button className="bg-seti-orange hover:bg-orange-600 px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105">
+              Inscreva-se Agora
+            </button>
+          </a>
         </div>
       </div>
 
