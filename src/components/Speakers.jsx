@@ -14,7 +14,7 @@ import luisSoaresaImg from '../assets/images/palestrantes/luis-soares.jpeg';
 import vitorTenorioImg from '../assets/images/palestrantes/vitor-tenorio.png';
 import pamelaMarinhoImg from '../assets/images/palestrantes/pamela-marinho.png';
 import danielOliveiraImg from '../assets/images/palestrantes/daniel-oliveira.png';
-import PedroMouraImg from '../assets/images/palestrantes/pedro-moura.png';
+import felipeAmorimImg from '../assets/images/palestrantes/felipe-amorim.jpeg';
 
 const Speakers = () => {
   const speakers = [
@@ -75,14 +75,14 @@ const Speakers = () => {
     {
       name: 'Daniel Oliveira',
       title: 'Palestrante',
-      description: 'Engenheiro Aeronáutico e Mestre pelo Instituto Tecnológico de Aeronáutica (ITA), é CEO da Dafer Technology e atua também como CEA (Certificado de Especialista em Investimentos ANBIMA). Desenvolveu uma inteligência artificial voltada para auxiliar gestores de fundos de investimento em ações e multimercado, com o objetivo de superar a estratégia tradicional de Buy and Hold de um ativo.',
+      description: 'Engenheiro Aeronáutico e Mestre pelo Instituto Tecnológico de Aeronáutica (ITA), é CEO da Dafer Technology e atua também como consultor de investimentos. Desenvolveu uma inteligência artificial voltada para auxiliar gestores de fundos de investimento em ações e multimercado, com o objetivo de superar a estratégia tradicional de Buy and Hold de um ativo.',
       image: danielOliveiraImg
     },
     {
-      name: 'Pedro Moura',
+      name: 'Felipe Amorim',
       title: 'Palestrante',
-      description: 'Especialista em Android Nativo com mais de 15 anos de experiência na área de tecnologia, é empreendedor, mentor e entusiasta da inovação. Com uma sólida trajetória como engenheiro Android e cofundador de startup, atua impulsionando o ecossistema de tecnologia e empreendedorismo em Uberlândia. Além de seu trabalho com desenvolvimento de software — abrangendo aplicativos, sistemas web e websites —, compartilha sua experiência como mentor, contribuindo para o crescimento de novos profissionais e projetos tecnológicos.',
-      image: PedroMouraImg
+      description: 'Desenvolvedor iOS com mais de 6 anos de experiência, formado em Ciência da Computação e atualmente cursando MBA em Inteligência Artificial e Analytics Aplicadas a Negócios na FGV.',
+      image: felipeAmorimImg
     },
   ];
 

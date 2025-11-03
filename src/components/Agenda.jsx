@@ -40,7 +40,7 @@ const Agenda = () => {
       {
         time: '13:00 - 14:00',
         title: 'Server Driven User Interface (SDUI) no Futuro do Desenvolvimento Mobile',
-        speaker: 'NEXOS',
+        speaker: 'Felipe Amorim',
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdPZk8Bqkdes7U2KsCJNqBnLzQRYK7IKe8p4ueFA7DMutKI8w/viewform?usp=dialog'
       },
       {

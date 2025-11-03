@@ -43,7 +43,7 @@ const Hero = () => {
             PRESENCIAL NA UFLA OU ONLINE
           </p>
           <p className="text-sm sm:text-base md:text-lg text-gray-300">
-            O DIA TODO
+            A TARDE E NOITE TODA
           </p>
           <p className="text-xl sm:text-2xl md:text-3xl font-bold text-seti-orange mt-3 md:mt-4">
             100% GRATUITO
