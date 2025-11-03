@@ -9,38 +9,80 @@ import marlonImg from '../assets/images/palestrantes/marlon.png';
 import nelsonImg from '../assets/images/palestrantes/nelson.png';
 import rafaelAlmeidaImg from '../assets/images/palestrantes/rafael-almeida.png';
 import tsunodaImg from '../assets/images/palestrantes/tsunoda.jpg';
+import alvaroEspindolaImg from '../assets/images/palestrantes/alvaro-espindola.jpg';
+import luisSoaresaImg from '../assets/images/palestrantes/luis-soares.jpeg';
+import vitorTenorioImg from '../assets/images/palestrantes/vitor-tenorio.png';
+import pamelaMarinhoImg from '../assets/images/palestrantes/pamela-marinho.png';
+import danielOliveiraImg from '../assets/images/palestrantes/daniel-oliveira.png';
+import PedroMouraImg from '../assets/images/palestrantes/pedro-moura.png';
 
 const Speakers = () => {
   const speakers = [
     {
       name: 'Arthur Viana',
       title: 'Palestrante',
-      description: 'Profissional experiente na área de tecnologia, compartilhando conhecimentos e experiências sobre as tendências do mercado e desenvolvimento profissional.',
+      description: 'Arthur é prompt engineer na Cloudwalk, começou na empresa como estagiário e hoje faz aplicações de IA voltadas para melhorar a experiência do cliente.',
       image: arthurVianaImg
     },
     {
       name: 'Marlon',
       title: 'Palestrante',
-      description: 'Especialista em tecnologia com vasta experiência em projetos inovadores, trazendo insights valiosos sobre o futuro da área.',
+      description: 'Marlon é estudante de Ciência da Computação na UFSCar e atua como estagiário nas áreas de segurança e desenvolvimento. É cofundador do grupo Patos, voltado a projetos open source e à troca de conhecimento entre estudantes. Atualmente, trabalha com cibersegurança, criptografia e hardware.',
       image: marlonImg
     },
     {
       name: 'Nelson',
       title: 'Palestrante',
-      description: 'Profissional renomado no setor de TI, compartilhando sua expertise e visão sobre as transformações digitais e oportunidades de carreira.',
+      description: 'Engenheiro de Software, construindo apps com AI na CloudWalk, fazendo silício desenvolver consciência com o JIM, e construindo a rede intergaláctica de pagamentos.',
       image: nelsonImg
     },
     {
       name: 'Rafael Almeida',
       title: 'Palestrante',
-      description: 'Especialista em tecnologia e inovação, com ampla experiência em desenvolvimento de soluções e liderança de equipes.',
+      description: 'Apaixonado por tecnologia que cabe na palma da mão, é desenvolvedor mobile há mais de 10 anos e hoje é especialista na Cloudwalk criando soluções e apoiando todo o time de mobile da empresa.',
       image: rafaelAlmeidaImg
     },
     {
       name: 'Tsunoda',
       title: 'Palestrante',
-      description: 'Referência na área de tecnologia, trazendo conhecimentos práticos e estratégicos sobre o mercado de TI e desenvolvimento profissional.',
+      description: 'Referência na área de tecnologia, pela bolhadev, fazendo grandes contribuições para a comunidade de desenvolvedores no Brasil. Atualmente criando sua startup focado em incrições automatizadas para vagas tech devscout, fazendo build em público.',
       image: tsunodaImg
+    },
+    {
+      name: 'Álvaro Espíndola',
+      title: 'Palestrante',
+      description: 'Álvaro Martins Espíndola é Cientista de Dados Prescritivo na Bitka Analytics, formado em Ciência da Computação pela Universidade Federal de Lavras (UFLA) e mestrando em Otimização Quântica pela Universidade Federal de Minas Gerais (UFMG). Atua no desenvolvimento de modelos matemáticos e heurísticos para problemas industriais de grande escala, aplicando técnicas avançadas de Pesquisa Operacional e Programação Matemática. Sua pesquisa concentra-se na integração entre Otimização Clássica e Computação Quântica, explorando como conceitos de dualidade, sobreposição e entropia podem ser incorporados a modelos robustos e métodos híbridos quântico-clássicos, visando ampliar a eficiência e a interpretabilidade de algoritmos prescritivos em ambientes complexos.',
+      image: alvaroEspindolaImg
+    },
+    {
+      name: 'Luiz Soares',
+      title: 'Palestrante',
+      description: 'Luiz Soares é Tech Lead na Buildaz (Alemanhã), especialista em arquitetura e desenvolvimento Full Stack atuando também com Inteligência Artificial. Mestrando em Ciência da Computação pela UFLA, une visão acadêmica e prática para criar soluções digitais inovadoras e escaláveis.',
+      image: luisSoaresaImg
+    },
+    {
+      name: 'Vitor Tenorio',
+      title: 'Palestrante',
+      description: 'Formado em Ciência da Computação pela Universidade Federal de Lavras (UFLA), Vitor Tenório é fundador da Zeeway, uma empresa inovadora no ramo de tecnologia, atuando nela atualmente como gerente.',
+      image: vitorTenorioImg
+    },
+    {
+      name: 'Pamela Marinho',
+      title: 'Palestrante',
+      description: 'Graduada em Ciência da Computação pela Universidade Federal de Lavras (UFLA), mestre em Biotecnologia também pela UFLA e doutora em Bioinformática pela Universidade Federal de Minas Gerais (UFMG), Pâmela atua atualmente como Data Science Manager no Nubank.',
+      image: pamelaMarinhoImg
+    },
+    {
+      name: 'Daniel Oliveira',
+      title: 'Palestrante',
+      description: 'Engenheiro Aeronáutico e Mestre pelo Instituto Tecnológico de Aeronáutica (ITA), é CEO da Dafer Technology e atua também como CEA (Certificado de Especialista em Investimentos ANBIMA). Desenvolveu uma inteligência artificial voltada para auxiliar gestores de fundos de investimento em ações e multimercado, com o objetivo de superar a estratégia tradicional de Buy and Hold de um ativo.',
+      image: danielOliveiraImg
+    },
+    {
+      name: 'Pedro Moura',
+      title: 'Palestrante',
+      description: 'Especialista em Android Nativo com mais de 15 anos de experiência na área de tecnologia, é empreendedor, mentor e entusiasta da inovação. Com uma sólida trajetória como engenheiro Android e cofundador de startup, atua impulsionando o ecossistema de tecnologia e empreendedorismo em Uberlândia. Além de seu trabalho com desenvolvimento de software — abrangendo aplicativos, sistemas web e websites —, compartilha sua experiência como mentor, contribuindo para o crescimento de novos profissionais e projetos tecnológicos.',
+      image: PedroMouraImg
     },
   ];
 
@@ -63,7 +105,7 @@ const Speakers = () => {
             spaceBetween={20}
             slidesPerView={1}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 30000, disableOnInteraction: false }}
             className="pb-12"
           >
             {speakers.map((speaker, index) => (
@@ -97,7 +139,7 @@ const Speakers = () => {
             slidesPerView={3}
             navigation
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 30000, disableOnInteraction: false }}
             className="pb-12"
           >
             {speakers.map((speaker, index) => (

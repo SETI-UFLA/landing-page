@@ -64,7 +64,7 @@ const Partners = () => {
             spaceBetween={20}
             slidesPerView={1}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 30000, disableOnInteraction: false }}
             className="pb-12"
           >
             {partners.map((partner, index) => (
@@ -94,7 +94,7 @@ const Partners = () => {
             slidesPerView={3}
             pagination={{ clickable: true }}
             navigation={true}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 30000, disableOnInteraction: false }}
             breakpoints={{
               768: {
                 slidesPerView: 2,
