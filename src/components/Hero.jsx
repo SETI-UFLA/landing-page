@@ -58,6 +58,7 @@ const Hero = () => {
             Inscreva-se Agora
           </button>
           
+          {/* Botão Assistir Live - Comentado
           <a
             href="/live"
             className="bg-red-600 hover:bg-red-700 px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
@@ -67,6 +68,7 @@ const Hero = () => {
             </svg>
             Assistir Live
           </a>
+          */}
         </div>
       </div>
 

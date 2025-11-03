@@ -24,12 +24,6 @@ const Agenda = () => {
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfZkj0DPjd8UUEEXlH6WYLxmUzQ9_hCgWsXIwlRGllvxOF-yA/viewform?usp=dialog'
       },
       {
-        time: '17:00 - 18:00',
-        title: 'De dados a decisão: a jornada do Cientista de Dados',
-        speaker: 'Pâmela Marinho',
-        formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdNyopnyXxS_GLGRodultFmf1kWWIbVy2Va4kL9TxJdBqb9mQ/viewform?usp=dialog'
-      },
-      {
         time: '19:00 - 20:00',
         title: 'DO ZERO AO LLM: FUNDAMENTOS DE IA NA CONSTRUÇÃO DE ASSISTENTES INTELIGENTES',
         speaker: 'Luiz',
@@ -51,6 +45,13 @@ const Agenda = () => {
       }
     ],
     '05/11': [
+      {
+        time: '14:00 - 15:00',
+        title: 'Como desenvolver sua própria inteligência artificial',
+        speaker: 'Daniel Oliveira',
+        description: 'Como desenvolver sua própria inteligência artificial',
+        formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc0GfI87YEcgcqskrYmi91xcymDjnKGhIn0l9WjPPXz3h9uYQ/viewform?usp=dialog'
+      },
       {
         time: '15:00 - 16:00',
         title: 'AI-Driven Development: Evitando a Guerra Butleriana ',
@@ -89,9 +90,15 @@ const Agenda = () => {
         time: '17:00 - 18:00',
         title: 'YVA: A agente inteligente que está transformando a gestão pública no Brasil',
         speaker: 'Jean Santos Diniz e  Ellen Luise Sanchez Costa - YouX',
-        description: 'Arthur é prompt engineer na Cloudwalk, começou na empresa como estagiário e hoje faz aplicações de IA voltadas para melhorar a experiência do cliente.',
+        description: 'Ellen Luise Sanchez Costa Coordenadora de Marketing e Inovação na YouX Engenheira de Alimentos formada pela Universidade Federal de Lavras (UFLA), Ellen Costa construiu sua trajetória unindo inovação, tecnologia e propósito. Atua como Coordenadora de Marketing e Inovação na YouX, liderando as frentes de Comunicação, Experiência do Cliente, Service Design, Inovação e Novos Negócios. Jean Santos Diniz Analista de Sistemas na YouX Jean Diniz é Analista de Sistemas na YouX, graduando em Sistemas de Informação e atua no desenvolvimento de soluções digitais que unem tecnologia e propósito. Tem se dedicado ao estudo e aplicação de IA generativa e RAG (Retrieval-Augmented Generation) em produtos voltados à transformação digital da gestão pública.',
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeX3XrjSLXqEBWTKzHTmVYjT9QwynzYCFwxfLUhq6TzOlND0Q/viewform?usp=dialog'
-      }
+      },
+      {
+        time: '20:00 - 21:00',
+        title: 'De dados a decisão: a jornada do Cientista de Dados',
+        speaker: 'Pâmela Marinho',
+        formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdNyopnyXxS_GLGRodultFmf1kWWIbVy2Va4kL9TxJdBqb9mQ/viewform?usp=dialog'
+      },
     ],
     '07/11': [
       {
