@@ -25,9 +25,9 @@ const Live = () => {
         </h1>
 
         {/* Container do Player e Chat */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-[1800px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-[1800px] mx-auto items-start">
           {/* Player do YouTube - 2/3 da tela no desktop */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 flex flex-col">
             <div className="relative w-full bg-black rounded-lg overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
@@ -52,7 +52,7 @@ const Live = () => {
 
           {/* Chat do YouTube - 1/3 da tela no desktop */}
           <div className="lg:col-span-1">
-            <div className="bg-gray-900/50 rounded-lg border border-gray-700 overflow-hidden h-[500px] lg:h-[calc(100vh-200px)]">
+            <div className="bg-gray-900/50 rounded-lg border border-gray-700 overflow-hidden h-[600px] lg:h-[670px]">
               <div className="bg-gray-800 p-3 border-b border-gray-700">
                 <h3 className="text-white font-bold text-center">Chat ao Vivo</h3>
               </div>
