@@ -15,7 +15,6 @@ import vitorTenorioImg from '../assets/images/palestrantes/vitor-tenorio.png';
 import pamelaMarinhoImg from '../assets/images/palestrantes/pamela-marinho.png';
 import danielOliveiraImg from '../assets/images/palestrantes/daniel-oliveira.png';
 import felipeAmorimImg from '../assets/images/palestrantes/felipe-amorim.jpeg';
-import talesImg from '../assets/images/palestrantes/talesImg.jpg';
 
 const Speakers = () => {
   const speakers = [
@@ -85,12 +84,6 @@ const Speakers = () => {
       description: 'Desenvolvedor iOS com mais de 6 anos de experiência, formado em Ciência da Computação e atualmente cursando MBA em Inteligência Artificial e Analytics Aplicadas a Negócios na FGV.',
       image: felipeAmorimImg
     },
-    {
-      name: 'Tales Vieira',
-      title: 'Palestrante',
-      description: 'Tales Vieira é Perito Criminal da Polícia Civil de Minas Gerais há 21 anos, atualmente coordenando as Perícias do 6º Departamento. Possui Doutorado em Química e Pós-Doutorado em Ciência de Dados, atuando na integração entre tecnologia, investigação e análise inteligente de informações. Professor universitário há 22 anos e coordenador do Grupo de Estudos em Perícia e Investigação Digital do Unilavras, dedica-se à aplicação de Python, machine learning e cibersegurança em contextos forenses e de segurança pública.',
-      image: talesImg
-    },
   ];
 
   return (
@@ -152,7 +145,7 @@ const Speakers = () => {
             {speakers.map((speaker, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white rounded-lg overflow-hidden border-2 border-gray-200 hover:scale-105 transition-transform duration-300 h-[580px] flex flex-col">
-                  <div className="h-72 bg-gray-200 flex-shrink-0">
+                  <div className="h-64 bg-gray-200 flex-shrink-0">
                     <img 
                       src={speaker.image} 
                       alt={speaker.name}
