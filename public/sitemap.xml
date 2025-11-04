@@ -8,7 +8,7 @@
   <!-- Main Page -->
   <url>
     <loc>https://seti-ufla.github.io/landing-page/</loc>
-    <lastmod>2024-11-01</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,7 +16,7 @@
   <!-- Home Section -->
   <url>
     <loc>https://seti-ufla.github.io/landing-page/#home</loc>
-    <lastmod>2024-11-01</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -24,7 +24,7 @@
   <!-- Patrocinadores / Partners Section -->
   <url>
     <loc>https://seti-ufla.github.io/landing-page/#patrocinadores</loc>
-    <lastmod>2024-11-01</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -32,7 +32,7 @@
   <!-- Palestrantes / Speakers Section -->
   <url>
     <loc>https://seti-ufla.github.io/landing-page/#palestrantes</loc>
-    <lastmod>2024-11-01</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -40,7 +40,7 @@
   <!-- Sobre / About Section -->
   <url>
     <loc>https://seti-ufla.github.io/landing-page/#sobre</loc>
-    <lastmod>2024-11-01</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -48,7 +48,7 @@
   <!-- Atividades / Agenda Section -->
   <url>
     <loc>https://seti-ufla.github.io/landing-page/#atividades</loc>
-    <lastmod>2024-11-01</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

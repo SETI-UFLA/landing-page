@@ -45,7 +45,7 @@ const Live = () => {
                 VII Semana de Tecnologia da Informação
               </h2>
               <p className="text-gray-300 text-sm">
-                Acompanhe ao vivo as palestras e workshops do SETI 2024
+                Acompanhe ao vivo as palestras e workshops do SETI 2025
               </p>
             </div>
           </div>
