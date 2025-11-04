@@ -4,7 +4,7 @@ import logo from '../assets/images/Logo.png';
 const Live = () => {
   // Substitua pelo ID do vídeo/live do YouTube (apenas o ID, sem parâmetros)
   // Exemplo: 'dQw4w9WgXcQ' ou 'gEZ6DNc-teg'
-  const youtubeVideoId = '1osOgSKrYSM';
+  const youtubeVideoId = 'd_ciMM-DfHk';
   
   return (
     <section className="relative min-h-screen bg-black">
