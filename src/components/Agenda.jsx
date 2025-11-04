@@ -49,14 +49,12 @@ const Agenda = () => {
         time: '14:00 - 15:00',
         title: 'Como desenvolver sua própria inteligência artificial',
         speaker: 'Daniel Oliveira',
-        description: 'Como desenvolver sua própria inteligência artificial',
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc0GfI87YEcgcqskrYmi91xcymDjnKGhIn0l9WjPPXz3h9uYQ/viewform?usp=dialog'
       },
       {
         time: '15:00 - 16:00',
         title: 'AI-Driven Development: Evitando a Guerra Butleriana ',
         speaker: 'Nelson Campos - Cloudwalk',
-        description: 'Construindo apps com AI na CloudWalk, fazendo silício desenvolver consciência com o JIM, e construindo a rede intergalactica de pagamentos.',
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfZZ5CPUQma7NehoCxsxrcjt7vLZPvJh008myxeE7DBdjGEAA/viewform?usp=dialog'
       },
       {
@@ -80,10 +78,15 @@ const Agenda = () => {
     ],
     '06/11': [
       {
+        time: '15:00 - 16:00',
+        title: 'The Data Investigator: Como a Ciência dos Dados Revoluciona a Perícia Digital',
+        speaker: 'Tales Vieira - Perito Criminal da Polícia Civil de Minas Gerais',
+        formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdc8WOFvHO_bmEQTE5dzRyWsHaKjgAapk9oUh3hmiGpWIEqFA/viewform?usp=dialog'
+      },
+      {
         time: '16:00 - 17:00',
         title: 'Arquiteturas de agentes de IA',
         speaker: 'Arthur Viana - Cloudwalk',
-        description: 'Arthur é prompt engineer na Cloudwalk, começou na empresa como estagiário e hoje faz aplicações de IA voltadas para melhorar a experiência do cliente.',
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSerg5TyjoQflROPMJhV-7lzasPAyiPPhwMl9ImwbyNVp9jwcg/viewform?usp=sharing&ouid=115159331211906572522'
       },
       {
@@ -111,7 +114,6 @@ const Agenda = () => {
         time: '14:00 - 15:00',
         title: 'Treinando RNA utilizando estratégias evolutivas',
         speaker: 'Rafael Almeida - Cloudwalk',
-        description: 'Apaixonado por tecnologia que cabe na palma da mão, é desenvolvedor mobile há mais de 10 anos e hoje é especialista na Cloudwalk criando soluções e apoiando todo o time de mobile da empresa.',
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdvMacyy-8r_ZkWxt6lBzSy5LEQ7-RKTo_YhZCc3e1j0eUn1Q/viewform?usp=dialog'
       },
       {
