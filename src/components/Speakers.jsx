@@ -93,7 +93,7 @@ const Speakers = () => {
     {
       name: 'Tales Vieira',
       title: 'Palestrante',
-      description: 'Desenvolvedor iOS com mais de 6 anos de experiência, formado em Ciência da Computação e atualmente cursando MBA em Inteligência Artificial e Analytics Aplicadas a Negócios na FGV.',
+      description: 'Tales Vieira é Perito Criminal da Polícia Civil de Minas Gerais há 21 anos, atualmente coordenando as Perícias do 6º Departamento. Possui Doutorado em Química e Pós-Doutorado em Ciência de Dados, atuando na integração entre tecnologia, investigação e análise inteligente de informações. Professor universitário há 22 anos e coordenador do Grupo de Estudos em Perícia e Investigação Digital do Unilavras, dedica-se à aplicação de Python, machine learning e cibersegurança em contextos forenses e de segurança pública.',
       image: talesImg
     },
     {
