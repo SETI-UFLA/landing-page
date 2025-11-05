@@ -22,6 +22,15 @@ const PalestrasPassadas = () => {
       videoId: 'd_ciMM-DfHk', // Substitua pelo ID real do vídeo do YouTube
       descricao: 'Palestra sobre os principais conceitos e práticas de SDUI no mundo atual e no uso no mobile.',
     },
+    {
+      id: 3,
+      titulo: 'A Plataforma Devscout',
+      palestrante: 'Tsunode e Adam Neses',
+      data: '04/11/2025',
+      duracao: '1h',
+      videoId: 'fbTnUsg16qY', // Substitua pelo ID real do vídeo do YouTube
+      descricao: 'Palestra sobre uma plataforma que promete mudar os aspecto de entregar curriculos para achar seu emprego desejado.',
+    },
     // Adicione mais palestras aqui seguindo o mesmo formato
     // {
     //   id: 2,
