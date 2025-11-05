@@ -31,6 +31,15 @@ const PalestrasPassadas = () => {
       videoId: 'fbTnUsg16qY', // Substitua pelo ID real do vídeo do YouTube
       descricao: 'Palestra sobre uma plataforma que promete mudar os aspecto de entregar curriculos para achar seu emprego desejado.',
     },
+    {
+      id: 4,
+      titulo: 'A Física do Talvez: Uma Introdução a Computação Quântica',
+      palestrante: 'Álvaro Martins',
+      data: '05/11/2025',
+      duracao: '1h',
+      videoId: 'bMm8BQ6sKoA', // Substitua pelo ID real do vídeo do YouTube
+      descricao: 'Palestra sobre a introdução à computação quântica e seus princípios fundamentais com topicos de fisica, e sobre qubit.',
+    },
     // Adicione mais palestras aqui seguindo o mesmo formato
     // {
     //   id: 2,
