@@ -19,7 +19,7 @@ const Navbar = () => {
   // Para DESATIVAR o banner quando não houver live, comente todo o bloco abaixo
   // (desde const showLiveBanner até o fechamento do </> antes do return)
   // ============================================
-  const showLiveBanner = false; // Mude para false ou comente este bloco inteiro para desativar
+  const showLiveBanner = true; // Mude para false ou comente este bloco inteiro para desativar
   
   const LiveBanner = () => (
     <div className="fixed top-0 w-full bg-red-600 text-white py-2 px-4 text-center z-50">

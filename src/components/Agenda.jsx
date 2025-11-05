@@ -17,8 +17,24 @@ import guilhermeLevty from '../assets/images/palestrantes/guilhermeLevty.jpg';
 import ellenYouX from '../assets/images/palestrantes/Ellen Luise Sanchez Costa.jpg';
 import jeanYouX from '../assets/images/palestrantes/Jean Santos Diniz.jpeg';
 
+// ============================================
+// PALESTRAS ONLINE
+// Para marcar uma palestra como ONLINE, adicione a propriedade:
+// isOnline: true
+// 
+// Isso vai mudar a cor do card para azul e adicionar a tag "🌐 ONLINE"
+// ============================================
+
+// ============================================
+// DIA ATUAL DO EVENTO
+// Atualize este valor conforme o dia do evento:
+// '03/11', '04/11', '05/11', '06/11', ou '07/11'
+// Este será o dia exibido quando a página carregar
+// ============================================
+const CURRENT_EVENT_DAY = '05/11'; // ← ATUALIZE AQUI CONFORME O DIA
+
 const Agenda = () => {
-  const [selectedDay, setSelectedDay] = useState('03/11');
+  const [selectedDay, setSelectedDay] = useState(CURRENT_EVENT_DAY);
 
   const scheduleByDay = {
     '03/11': [
@@ -93,6 +109,7 @@ const Agenda = () => {
         title: 'Computação Quântica',
         speaker: 'Álvaro Martins - Cientista de Dados Prescritivo na Bitka',
         image: alvaroEspindolaImg,
+        isOnline: true, // Marca como palestra online
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSe-fNOZr6y-pt1z-1O0YdyYKKsWQNSn55l0m0aZpJuAUiakvA/viewform?usp=dialog'
       },
       {
@@ -107,6 +124,7 @@ const Agenda = () => {
         title: 'Seo na prática: Como buscadores pensam, o que importa e como medir resultados.',
         speaker: 'Guilherme Grego Santos - Tech Lead na Levty',
         image: guilhermeLevty,
+        isOnline: true, // Marca como palestra online
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeQnvsXtHGBruT2OJUNQYkYzCJGPoUR0OkYFW-BRj81jlpdhg/viewform?usp=sharing&ouid=115159331211906572522'
       },
     ],
@@ -220,6 +238,8 @@ const Agenda = () => {
                 className={`relative rounded-lg overflow-hidden will-change-auto ${
                   isPastDay
                     ? 'bg-gradient-to-r from-gray-800/60 to-gray-900/60 border-l-4 border-gray-500 opacity-75'
+                    : item.isOnline
+                    ? 'bg-gradient-to-r from-blue-900/80 to-blue-950/60 border-l-4 border-blue-500'
                     : 'bg-gradient-to-r from-black/80 to-black/60 border-l-4 border-seti-orange'
                 }`}
               >
@@ -229,9 +249,15 @@ const Agenda = () => {
                     <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                       {/* Time Column */}
                       <div className="md:w-40 shrink-0">
-                        <div className={`font-bold text-lg md:text-xl ${isPastDay ? 'text-gray-400' : 'text-seti-orange'}`}>
+                        <div className={`font-bold text-lg md:text-xl ${isPastDay ? 'text-gray-400' : item.isOnline ? 'text-blue-400' : 'text-seti-orange'}`}>
                           {item.time}
                         </div>
+                        {/* Tag Online */}
+                        {item.isOnline && !isPastDay && (
+                          <span className="inline-block mt-2 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            🌐 ONLINE
+                          </span>
+                        )}
                       </div>
 
                       {/* Content */}
@@ -240,7 +266,7 @@ const Agenda = () => {
                           {item.title}
                         </h3>
                         {item.speaker && (
-                          <p className={`text-sm md:text-base mb-3 ${isPastDay ? 'text-gray-400' : 'text-seti-orange'}`}>
+                          <p className={`text-sm md:text-base mb-3 ${isPastDay ? 'text-gray-400' : item.isOnline ? 'text-blue-400' : 'text-seti-orange'}`}>
                             com <span className="font-semibold">{item.speaker}</span>
                           </p>
                         )}
