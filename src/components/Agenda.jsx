@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import marlonImg from '../assets/images/palestrantes/marlon.png';
 import luisSoaresaImg from '../assets/images/palestrantes/luis-soares.jpeg';
 import felipeAmorimImg from '../assets/images/palestrantes/felipe-amorim.jpeg';
@@ -173,6 +173,9 @@ const Agenda = () => {
   const days = ['03/11', '04/11', '05/11', '06/11', '07/11'];
   const pastDays = ['03/11', '04/11']; // Dias que já passaram
 
+  // Memoiza se o dia selecionado é passado para evitar recalcular
+  const isPastDay = useMemo(() => pastDays.includes(selectedDay), [selectedDay]);
+
   return (
     <section id="atividades" className="relative py-12 md:py-20">
       {/* Background gradient */}
@@ -211,15 +214,13 @@ const Agenda = () => {
 
         {/* Schedule Items */}
         <div className="max-w-5xl mx-auto space-y-4 md:space-y-6">
-          {scheduleByDay[selectedDay].map((item, index) => {
-            const isPastDay = pastDays.includes(selectedDay);
-            return (
+          {scheduleByDay[selectedDay].map((item, index) => (
               <div
-                key={index}
-                className={`relative bg-gradient-to-r rounded-lg overflow-hidden transition-all duration-300 ${
+                key={`${selectedDay}-${index}`}
+                className={`relative rounded-lg overflow-hidden will-change-auto ${
                   isPastDay
-                    ? 'from-gray-800/60 to-gray-900/60 border-l-4 border-gray-500 opacity-75 hover:opacity-90'
-                    : 'from-black/80 to-black/60 border-l-4 border-seti-orange hover:from-black/90 hover:to-black/70'
+                    ? 'bg-gradient-to-r from-gray-800/60 to-gray-900/60 border-l-4 border-gray-500 opacity-75'
+                    : 'bg-gradient-to-r from-black/80 to-black/60 border-l-4 border-seti-orange'
                 }`}
               >
                 <div className="flex flex-col md:flex-row">
@@ -263,7 +264,7 @@ const Agenda = () => {
                             href={item.formUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-block bg-seti-orange hover:bg-orange-600 text-black font-bold px-4 md:px-6 py-2 md:py-2.5 rounded-full text-xs md:text-sm transition-all duration-300 transform hover:scale-105"
+                            className="inline-block bg-seti-orange md:hover:bg-orange-600 text-black font-bold px-4 md:px-6 py-2 md:py-2.5 rounded-full text-xs md:text-sm active:bg-orange-600"
                           >
                             Inscrever-se
                           </a>
@@ -298,8 +299,7 @@ const Agenda = () => {
                   ) : null}
                 </div>
               </div>
-            );
-          })}
+            ))}
         </div>
       </div>
     </section>
