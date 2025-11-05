@@ -15,6 +15,12 @@ import vitorTenorioImg from '../assets/images/palestrantes/vitor-tenorio.png';
 import pamelaMarinhoImg from '../assets/images/palestrantes/pamela-marinho.png';
 import danielOliveiraImg from '../assets/images/palestrantes/daniel-oliveira.png';
 import felipeAmorimImg from '../assets/images/palestrantes/felipe-amorim.jpeg';
+import talesImg from '../assets/images/palestrantes/talesImg.jpg';
+import danielRodoSafra from '../assets/images/palestrantes/danielRodoSafra.jpg'
+import angeloNexos from '../assets/images/palestrantes/angeloNexos.jpeg'
+import ellenYouX from '../assets/images/palestrantes/Ellen Luise Sanchez Costa.jpg';
+import jeanYouX from '../assets/images/palestrantes/Jean Santos Diniz.jpeg';
+import guilhermeLevty from '../assets/images/palestrantes/guilhermeLevty.jpg';
 
 const Speakers = () => {
   const speakers = [
@@ -84,6 +90,42 @@ const Speakers = () => {
       description: 'Desenvolvedor iOS com mais de 6 anos de experiência, formado em Ciência da Computação e atualmente cursando MBA em Inteligência Artificial e Analytics Aplicadas a Negócios na FGV.',
       image: felipeAmorimImg
     },
+    {
+      name: 'Tales Vieira',
+      title: 'Palestrante',
+      description: 'Desenvolvedor iOS com mais de 6 anos de experiência, formado em Ciência da Computação e atualmente cursando MBA em Inteligência Artificial e Analytics Aplicadas a Negócios na FGV.',
+      image: talesImg
+    },
+    {
+      name: 'Daniel Henrique Pinheiro',
+      title: 'Palestrante',
+      description: 'Chief Executive Officer at Rodosafra Transportes',
+      image: danielRodoSafra
+    },
+    {
+      name: 'Ângelo Cupertino',
+      title: 'Palestrante',
+      description: 'Engenheiro de Software na Nexos',
+      image: angeloNexos
+    },
+    {
+      name: 'Ellen Luise Sanchez Costa',
+      title: 'Palestrante',
+      description: 'Coordenadora de Marketing e Inovação na YouX. Engenheira de Alimentos formada pela Universidade Federal de Lavras (UFLA), Ellen Costa construiu sua trajetória unindo inovação, tecnologia e propósito. Atua como Coordenadora de Marketing e Inovação na YouX, liderando as frentes de Comunicação, Experiência do Cliente, Service Design, Inovação e Novos Negócios.s',
+      image: ellenYouX
+    },
+    {
+      name: 'Jean Santos Diniz',
+      title: 'Palestrante',
+      description: 'Analista de Sistemas na YouX. Jean Diniz é Analista de Sistemas na YouX, graduando em Sistemas de Informação e atua no desenvolvimento de soluções digitais que unem tecnologia e propósito. Tem se dedicado ao estudo e aplicação de IA generativa e RAG (Retrieval-Augmented Generation) em produtos voltados à transformação digital da gestão pública.',
+      image: jeanYouX
+    },
+    {
+      name: 'Guilherme Grego',
+      title: 'Palestrante',
+      description: 'Tech Lead na Levty.',
+      image: guilhermeLevty
+    },
   ];
 
   return (
@@ -110,7 +152,7 @@ const Speakers = () => {
           >
             {speakers.map((speaker, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white rounded-lg overflow-hidden border-2 border-gray-200 transition-all duration-300 mx-4 h-[580px] flex flex-col">
+                <div className="bg-white rounded-lg overflow-hidden border-2 border-gray-200 transition-all duration-300 mx-4 h-[590px] flex flex-col">
                   <div className="h-64 bg-gray-200 flex-shrink-0">
                     <img 
                       src={speaker.image} 
@@ -145,11 +187,11 @@ const Speakers = () => {
             {speakers.map((speaker, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white rounded-lg overflow-hidden border-2 border-gray-200 hover:scale-105 transition-transform duration-300 h-[580px] flex flex-col">
-                  <div className="h-64 bg-gray-200 flex-shrink-0">
-                    <img 
-                      src={speaker.image} 
+                  <div className="h-80 bg-gray-200 flex-shrink-0">
+                    <img
+                      src={speaker.image}
                       alt={speaker.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <div className="p-6 flex-1 flex flex-col overflow-auto">
