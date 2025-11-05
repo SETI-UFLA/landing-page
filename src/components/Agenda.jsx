@@ -44,7 +44,7 @@ const Agenda = () => {
       {
         time: '19:00 - 20:00',
         title: 'DO ZERO AO LLM: FUNDAMENTOS DE IA NA CONSTRUÇÃO DE ASSISTENTES INTELIGENTES',
-        speaker: 'Luiz',
+        speaker: 'Luiz Soarez - Tech Lead na Buildaz',
         image: luisSoaresaImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScG1CcswO5jR3ZRsMELfpmtoNGHJUSy-hmaUKrqy8iml1fbSQ/viewform?usp=sharing&ouid=115159331211906572522'
       }
@@ -53,7 +53,7 @@ const Agenda = () => {
       {
         time: '13:00 - 14:00',
         title: 'Server Driven User Interface (SDUI) no Futuro do Desenvolvimento Mobile',
-        speaker: 'Felipe Amorim',
+        speaker: 'Felipe Amorim - Desenvolvedor IOS na Nexos',
         image: felipeAmorimImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdPZk8Bqkdes7U2KsCJNqBnLzQRYK7IKe8p4ueFA7DMutKI8w/viewform?usp=dialog'
       },
@@ -77,7 +77,7 @@ const Agenda = () => {
       {
         time: '14:00 - 15:00',
         title: 'Como desenvolver sua própria inteligência artificial',
-        speaker: 'Daniel Oliveira',
+        speaker: 'Daniel Oliveira - Engenheiro Aeronáutico e Mestre pelo ITA, Ceo da Dafer e consultor de investimentos',
         image: danielOliveiraImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc0GfI87YEcgcqskrYmi91xcymDjnKGhIn0l9WjPPXz3h9uYQ/viewform?usp=dialog'
       },
@@ -91,7 +91,7 @@ const Agenda = () => {
       {
         time: '16:00 - 17:00',
         title: 'Computação Quântica',
-        speaker: 'Álvaro Martins',
+        speaker: 'Álvaro Martins - Cientista de Dados Prescritivo na Bitka',
         image: alvaroEspindolaImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSe-fNOZr6y-pt1z-1O0YdyYKKsWQNSn55l0m0aZpJuAUiakvA/viewform?usp=dialog'
       },
@@ -105,7 +105,7 @@ const Agenda = () => {
       {
         time: '18:00 - 19:00',
         title: 'Seo na prática: Como buscadores pensam, o que importa e como medir resultados.',
-        speaker: 'Guilherme Grego Santos - Levty',
+        speaker: 'Guilherme Grego Santos - Tech Lead na Levty',
         image: guilhermeLevty,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSeQnvsXtHGBruT2OJUNQYkYzCJGPoUR0OkYFW-BRj81jlpdhg/viewform?usp=sharing&ouid=115159331211906572522'
       },
@@ -135,7 +135,7 @@ const Agenda = () => {
       {
         time: '20:00 - 21:00',
         title: 'De dados a decisão: a jornada do Cientista de Dados',
-        speaker: 'Pâmela Marinho',
+        speaker: 'Pâmela Marinho - Data Science Manager no Nubank',
         image: pamelaMarinhoImg,
         formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdNyopnyXxS_GLGRodultFmf1kWWIbVy2Va4kL9TxJdBqb9mQ/viewform?usp=dialog'
       },
@@ -272,9 +272,9 @@ const Agenda = () => {
                     </div>
                   </div>
 
-                  {/* Speaker Image(s) - Right Side */}
+                  {/* Speaker Image(s) - Right Side (Desktop only) */}
                   {item.images ? (
-                    <div className="w-full md:w-32 lg:w-40 h-32 md:h-auto shrink-0 flex md:flex-col">
+                    <div className="hidden md:flex md:w-32 lg:w-40 md:h-auto shrink-0 md:flex-col">
                       {item.images.map((img, imgIndex) => (
                         <div key={imgIndex} className="flex-1 h-full">
                           <img
@@ -287,7 +287,7 @@ const Agenda = () => {
                       ))}
                     </div>
                   ) : item.image ? (
-                    <div className="w-full md:w-32 lg:w-40 h-32 md:h-auto shrink-0">
+                    <div className="hidden md:block md:w-32 lg:w-40 md:h-auto shrink-0">
                       <img
                         src={item.image}
                         alt={item.speaker}
