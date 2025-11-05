@@ -40,6 +40,15 @@ const PalestrasPassadas = () => {
       videoId: 'bMm8BQ6sKoA', // Substitua pelo ID real do vídeo do YouTube
       descricao: 'Palestra sobre a introdução à computação quântica e seus princípios fundamentais com topicos de fisica, e sobre qubit.',
     },
+   {
+      id: 5,
+      titulo: 'Seo na prática: Como buscadores pensam, o que importa e como medir resultados.',
+      palestrante: 'Guilherme Grego',
+      data: '05/11/2025',
+      duracao: '1h',
+      videoId: 'W03lawnUKmo', // Substitua pelo ID real do vídeo do YouTube
+      descricao: 'Palestra sobre o mecanismo de buscas na prática, como os buscadores pensam, o que realmente importa para ranquear bem e como medir resultados de SEO.',
+    },
     // Adicione mais palestras aqui seguindo o mesmo formato
     // {
     //   id: 2,
