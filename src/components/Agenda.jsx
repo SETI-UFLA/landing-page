@@ -188,7 +188,7 @@ const Agenda = () => {
         isOnline: true, // Marca como palestra online
         speaker: 'Willian Silva - Coordenador de Projetos BITKA',
         image: williamBip,
-       formUrl: ''
+       formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfFtPEI8_37MgcL95iSm5WjwqM-fPHJbe0CJ-ddWznR5UmVJg/viewform?usp=publish-editor'
       },
       
       {
