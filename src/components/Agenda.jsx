@@ -16,6 +16,8 @@ import danielRodoSafra from '../assets/images/palestrantes/danielRodoSafra.jpg';
 import guilhermeLevty from '../assets/images/palestrantes/guilhermeLevty.jpg';
 import ellenYouX from '../assets/images/palestrantes/Ellen Luise Sanchez Costa.jpg';
 import jeanYouX from '../assets/images/palestrantes/Jean Santos Diniz.jpeg';
+import williamBip from '../assets/images/palestrantes/williamBip.png';
+import grupoRV from '../assets/images/palestrantes/grupo-rv.jpg';
 
 // ============================================
 // PALESTRAS ONLINE
@@ -31,7 +33,7 @@ import jeanYouX from '../assets/images/palestrantes/Jean Santos Diniz.jpeg';
 // '03/11', '04/11', '05/11', '06/11', ou '07/11'
 // Este será o dia exibido quando a página carregar
 // ============================================
-const CURRENT_EVENT_DAY = '05/11'; // ← ATUALIZE AQUI CONFORME O DIA
+const CURRENT_EVENT_DAY = '06/11'; // ← ATUALIZE AQUI CONFORME O DIA
 
 const Agenda = () => {
   const [selectedDay, setSelectedDay] = useState(CURRENT_EVENT_DAY);
@@ -174,11 +176,21 @@ const Agenda = () => {
        formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdvMacyy-8r_ZkWxt6lBzSy5LEQ7-RKTo_YhZCc3e1j0eUn1Q/viewform?usp=dialog'
       },
       {
-        time: '14:00 - 15:00',
+        time: '15:00 - 16:00',
         title: 'Realidade Virtual para além do entretenimento: aplicações na educação, saúde e ambiente corporativo.',
         speaker: 'Gabriel Barros, Hugo Lima, Lucca Guedes e Nina Ribeiro',
+        image: grupoRV,
        formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSc_nmk9z7T2OKwYzTLdhKhGm-JBSI6UIsRgD58eHvr2_tqmkA/viewform?usp=publish-editor'
       },
+      {
+        time: '16:00 - 17:00',
+        title: 'Sistemas analíticos para controle da circulação de trens em uma das maiores mineradoras do mundo',
+        isOnline: true, // Marca como palestra online
+        speaker: 'Willian Silva - Coordenador de Projetos BITKA',
+        image: williamBip,
+       formUrl: ''
+      },
+      
       {
         time: '17:00 - 18:00',
         title: 'Encerramento',
@@ -189,7 +201,7 @@ const Agenda = () => {
   };
 
   const days = ['03/11', '04/11', '05/11', '06/11', '07/11'];
-  const pastDays = ['03/11', '04/11']; // Dias que já passaram
+  const pastDays = ['03/11', '04/11', '05/11']; // Dias que já passaram
 
   // Memoiza se o dia selecionado é passado para evitar recalcular
   const isPastDay = useMemo(() => pastDays.includes(selectedDay), [selectedDay]);
