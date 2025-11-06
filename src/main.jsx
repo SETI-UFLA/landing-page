@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import Live from './components/Live.jsx'
 import PalestrasPassadas from './components/PalestrasPassadas.jsx'
+import { Analytics } from '@vercel/analytics/react'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -15,5 +16,6 @@ createRoot(document.getElementById('root')).render(
         <Route path="/palestras" element={<PalestrasPassadas />} />
       </Routes>
     </BrowserRouter>
+    <Analytics />
   </StrictMode>,
 )
