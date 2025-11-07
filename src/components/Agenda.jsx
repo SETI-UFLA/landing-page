@@ -185,7 +185,6 @@ const Agenda = () => {
       {
         time: '16:00 - 17:00',
         title: 'Sistemas analíticos para controle da circulação de trens em uma das maiores mineradoras do mundo',
-        isOnline: true, // Marca como palestra online
         speaker: 'Willian Silva - Coordenador de Projetos BITKA',
         image: williamBip,
        formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSfFtPEI8_37MgcL95iSm5WjwqM-fPHJbe0CJ-ddWznR5UmVJg/viewform?usp=publish-editor'
