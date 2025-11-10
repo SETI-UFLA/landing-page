@@ -22,8 +22,7 @@ const Hero = () => {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight px-2"
           style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 900 }}
         >
-          CONECTANDO IDEIAS,{' '}
-          <span className="text-seti-blue">CRIANDO FUTUROS</span>
+          OBRIGADO POR FAZER PARTE DA{' '}
         </h1>
         
         <div className="mb-6 md:mb-8 flex justify-center">
@@ -34,30 +33,27 @@ const Hero = () => {
           VII SEMANA DE TECNOLOGIA DA INFORMAÇÃO
         </p>
 
-        {/* Event Info Box */}
-        <div className="inline-block bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 mb-6 md:mb-8 max-w-xl mx-auto">
+        {/* Thank You Message Box */}
+        <div className="inline-block bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 mb-6 md:mb-8 max-w-2xl mx-auto">
           <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4">
-            DE <span className="text-seti-orange">03 A 07 DE NOVEMBRO</span>
+            <span className="text-seti-orange">EVENTO ENCERRADO</span>
           </h3>
-          <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-1 md:mb-2">
-            PRESENCIAL NA UFLA OU ONLINE
+          <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-3 md:mb-4 leading-relaxed">
+            Agradecemos imensamente a todos que participaram da VII Semana de Tecnologia da Informação! 
+            Foi uma semana incrível de aprendizado, networking e troca de experiências.
           </p>
-          <p className="text-sm sm:text-base md:text-lg text-gray-300">
-            A TARDE E NOITE TODA
-          </p>
-          <p className="text-xl sm:text-2xl md:text-3xl font-bold text-seti-orange mt-3 md:mt-4">
-            100% GRATUITO
-          </p>
+          <div className="bg-seti-blue/20 border border-seti-blue/50 rounded-lg p-4 mt-4">
+            <p className="text-base sm:text-lg md:text-xl font-bold text-seti-blue mb-2">
+              📜 Certificados em Breve!
+            </p>
+            <p className="text-sm sm:text-base text-gray-300">
+              Em breve será iniciada a emissão dos certificados de participação. 
+              Fique atento aos nossos canais de comunicação!
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button 
-            onClick={scrollToAgenda}
-            className="bg-seti-orange hover:bg-orange-600 px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 cursor-pointer"
-          >
-            Inscreva-se Agora
-          </button>
-
           <a
             href="/palestras"
             className="bg-seti-blue hover:bg-blue-600 px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
@@ -65,20 +61,8 @@ const Hero = () => {
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
             </svg>
-            Palestras Passadas
+            Reveja as Palestras
           </a>
-          
-          {/*
-          <a
-            href="/live"
-            className="bg-red-600 hover:bg-red-700 px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full text-base sm:text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
-          >
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-            </svg>
-            Assistir Live
-          </a>
-          */}
         </div>
       </div>
 

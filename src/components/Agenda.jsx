@@ -33,7 +33,7 @@ import grupoRV from '../assets/images/palestrantes/grupo-rv.jpg';
 // '03/11', '04/11', '05/11', '06/11', ou '07/11'
 // Este será o dia exibido quando a página carregar
 // ============================================
-const CURRENT_EVENT_DAY = '07/11'; // ← ATUALIZE AQUI CONFORME O DIA
+const CURRENT_EVENT_DAY = '03/11'; // ← ATUALIZE AQUI CONFORME O DIA
 
 const Agenda = () => {
   const [selectedDay, setSelectedDay] = useState(CURRENT_EVENT_DAY);
@@ -200,7 +200,7 @@ const Agenda = () => {
   };
 
   const days = ['03/11', '04/11', '05/11', '06/11', '07/11'];
-  const pastDays = ['03/11', '04/11', '05/11', '06/11']; // Dias que já passaram
+  const pastDays = ['03/11', '04/11', '05/11', '06/11', '07/11']; // Dias que já passaram
 
   // Memoiza se o dia selecionado é passado para evitar recalcular
   const isPastDay = useMemo(() => pastDays.includes(selectedDay), [selectedDay]);
